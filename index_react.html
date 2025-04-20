@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+      // Wähle das div-Element mit der ID 'app' aus
+      const app = document.getElementById('app');
+ 
+      // Erstelle ein neues H1-Element
+      const header = document.createElement('h1');
+ 
+      // Erstelle einen neuen Textknoten für das H1-Element
+      const text = 'Develop. Preview. Ship.';
+      const headerContent = document.createTextNode(text);
+ 
+      // Füge den Text zum H1-Element hinzu
+      header.appendChild(headerContent);
+ 
+      // Platziere das H1-Element innerhalb des div-Elements
+      app.appendChild(header);
+    </script>
+  </body>
+</html>
