@@ -8,8 +8,8 @@
     <script type="text/jsx">
       const domNode = document.getElementById('app');
       
-      function Header(props) {  
-        console.log(props); // { title: "React" } in der Entwicklerkonsole des Browsers zu sehen
+      function Header({ title }) {  
+        console.log(title); // "React" in der Entwicklerkonsole des Browsers zu sehen
         return (<h1>Develop. Preview. Ship.</h1>)      
       }
       function HomePage() {
