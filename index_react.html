@@ -8,14 +8,15 @@
     <script type="text/jsx">
       const domNode = document.getElementById('app');
       
-      function Header() {  
+      function Header(props) {  
+        console.log(props); // { title: "React" } in der Entwicklerkonsole des Browsers zu sehen
         return (<h1>Develop. Preview. Ship.</h1>)      
       }
       function HomePage() {
         return (
             <div>
               {/* Verschachteln der Header Komponente */}
-              <Header />
+              <Header title="React" />
             </div>
           );
       }
