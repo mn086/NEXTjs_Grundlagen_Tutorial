@@ -9,14 +9,15 @@
       const domNode = document.getElementById('app');
       
       function Header({ title }) {  
-        console.log(title); // "React" in der Entwicklerkonsole des Browsers zu sehen
-        return (<h1>Develop. Preview. Ship.</h1>)      
+        return <h1>{title ? title : 'Default title'}</h1>;      
       }
       function HomePage() {
         return (
             <div>
               {/* Verschachteln der Header Komponente */}
+              <Header />
               <Header title="React" />
+              <Header title="Ein anderer Titel" />
             </div>
           );
       }
